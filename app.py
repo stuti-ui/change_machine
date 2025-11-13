@@ -54,7 +54,7 @@ def send_query_to_api(query: str, api_url: str) -> Optional[dict]:
         return None
 
 def main():
-    st.title("💬 Chatbot Interface")
+    st.title("💬 Change Machine ChatBot")
     st.session_state.api_url = "https://stuti-ui.app.n8n.cloud/webhook/rag-webhook"
 
     if st.button("🗑️ Clear Chat History"):
