@@ -60,6 +60,16 @@ def main():
     if st.button("🗑️ Clear Chat History"):
             st.session_state.messages = []
             st.rerun()
+    
+    if st.button("Refresh database"):
+        # Make POST request
+        response = requests.post(
+            "",
+            json={}
+        )
+        response.raise_for_status()
+        st.rerun()
+    
     # Main chat interface
     if not st.session_state.api_url:
         st.info("👈 Please configure the API endpoint URL in the sidebar to start chatting.")
