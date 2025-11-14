@@ -5,7 +5,7 @@ from typing import Optional
 
 # Page configuration
 st.set_page_config(
-    page_title="Change machine chatbot",
+    page_title="Change machine CoachAI",
     page_icon="💬",
     layout="wide"
 )
@@ -54,7 +54,7 @@ def send_query_to_api(query: str, api_url: str) -> Optional[dict]:
         return None
 
 def main():
-    st.title("💬 Change Machine ChatBot")
+    st.title("💬 Change Machine CoachAI")
     st.session_state.api_url = "https://stuti-ui.app.n8n.cloud/webhook/rag-webhook"
 
     if st.button("🗑️ Clear Chat History"):
