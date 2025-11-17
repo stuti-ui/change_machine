@@ -64,7 +64,7 @@ def main():
     if st.button("Refresh database"):
         # Make POST request
         response = requests.post(
-            "",
+            "https://nupur121.app.n8n.cloud/webhook/google-drive-sync",
             json={}
         )
         response.raise_for_status()
