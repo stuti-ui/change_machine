@@ -62,12 +62,13 @@ def main():
             st.rerun()
     
     if st.button("Refresh database"):
-        # Make POST request
-        response = requests.post(
-            "https://nupur121.app.n8n.cloud/webhook/google-drive-sync",
-            json={}
-        )
-        response.raise_for_status()
+        with st.spinner("Refreshing database..."):
+            # Make POST request
+            response = requests.post(
+                "https://nupur121.app.n8n.cloud/webhook/google-drive-sync",
+                json={}
+            )
+            response.raise_for_status()
         st.rerun()
     
     # Main chat interface
