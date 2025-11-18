@@ -55,7 +55,7 @@ def send_query_to_api(query: str, api_url: str) -> Optional[dict]:
 
 def main():
     st.title("💬 Change Machine CoachAI")
-    st.session_state.api_url = "https://stuti-ui.app.n8n.cloud/webhook/rag-webhook"
+    st.session_state.api_url = "https://nupur121.app.n8n.cloud/webhook/rag-webhook"
 
     if st.button("🗑️ Clear Chat History"):
             st.session_state.messages = []
